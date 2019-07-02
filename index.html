@@ -24,8 +24,14 @@
     </div>
 
     <div class="image-container">
-      <img src="images/img.jpg" alt="mountains">
+      <!-- <img src="images/img.jpg" alt="mountains"> -->
+      <picture> <!-- this tag sets the img size per screen size (responsive) -->
+        <source srcset="images/img.jpg" media="(max-width: 375px)">
+        <img src="images/img.jpg" alt="mountains">
+      </picture>
     </div>
+
+
 
   </main>
   <script src="js/main.js"></script>
